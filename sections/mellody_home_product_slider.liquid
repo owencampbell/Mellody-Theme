@@ -1,0 +1,146 @@
+<!-- mellody products section start here -->
+    <section class="mellody-products">
+        <div class="mellody-product-conatiner">
+        <div class="mellody-product-information">
+            <div class="mellody-question-heading">
+              {% if section.settings.question !=blank %}
+                <p class="mellody-question-text">{{ section.settings.question }}</p>
+                {% endif %}
+            </div>
+            <div class="mellody-product-content">
+                <div class="mellody-before-content-image">
+                  {% if section.settings.left_leaf_image != blank%}
+                    <img src="{{ section.settings.left_leaf_image | img_url:'master' }}" class="mellody-content-left-image">
+                {% endif %}
+                    </div>
+                <div class="mellody-product-content-text">
+                  {% if section.settings.title != blank %}
+                    <p class="mellody-product-note">{{ section.settings.title }}</p>
+                    {% endif %}
+                    {% if section.settings.products_name != blank %}
+                    <h2 class="mellody-product-names">{{ section.settings.products_name }}</h2>
+                      {% endif %}
+                      {% if section.settings.product_text != blank %}
+                    <p class="mellody-products-subtitle">({{ section.settings.product_text }})</p>
+                        {% endif %}
+                </div>
+
+                <div class="mellody-after-content-image">
+                  {% if section.settings.right_leaf_image != blank %}
+                    <img src="{{ section.settings.right_leaf_image | img_url:'master' }}" class="mellody-content-right-image">
+               {% endif %}
+                    </div>
+            </div>
+        </div>
+        <div class="mellody-prod-slider">
+          {% if section.settings.carousel_left_flower != blank %}
+         <img src="{{ section.settings.carousel_left_flower | img_url:'master' }}"  class="carousel-flower-left">
+            {% endif %}
+        <div class="owl-carousel owl-theme mellody-product-slider">
+          {% for block in section.blocks %}
+            <div class="item">
+                <div class="mellody-slide-product">
+            {% if section.settings.carousel_left_flower != blank %}
+                    <img src="{{ block.settings.product_image | img_url:'master' }}" alt="" class="mellody-slide-product-image">
+              {% endif %}  
+              </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="mellody-prod-slider-bottom-content">
+          {% if section.settings.carousel_left_star != blank %}
+            <img src="{{ section.settings.carousel_left_star | img_url:'master' }}" alt="" class="carousel-star-left">
+            {% endif %}
+            {% if section.settings.pair_with_banner_with_text != blank %}
+            <img src="{{ section.settings.pair_with_banner_with_text | img_url:'master' }}" alt="" class="pair-with-banner-with-text">
+            {% endif %}
+             {% if section.settings.carousel_right_flower != blank %}
+              <img src="{{ section.settings.carousel_right_flower | img_url:'master' }}" alt="" class="carousel-flower-right">
+           {% endif %}
+               </div>
+    </div>
+
+        </div>
+    </section>
+    <!-- mellody products section end here -->
+{% schema %}
+  {
+    "name": "Home Product Slider",
+    "settings": [
+      {
+        "type":"text",
+        "id":"question",
+        "label":"Question Text"
+      },
+      {
+        "type":"image_picker",
+        "id":"left_leaf_image",
+        "label":"left Leaf Note Image"
+      },
+        {
+        "type":"image_picker",
+        "id":"right_leaf_image",
+        "label":"Right Leaf Note Image"
+      },
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"text",
+        "id":"products_name",
+        "label":"Title"
+      },
+        {
+        "type":"text",
+        "id":"product_text",
+        "label":"Subtitle"
+      },
+      {
+        "type":"image_picker",
+        "id":"carousel_left_flower",
+        "label":"Carousel Left Flower"
+      },
+       {
+        "type":"image_picker",
+        "id":"carousel_right_flower",
+        "label":"Carousel Right Flower"
+      },
+       {
+        "type":"image_picker",
+        "id":"carousel_left_star",
+        "label":"Carousel Left Star"
+      },
+      {
+        "type":"image_picker",
+        "id":"pair_with_banner_with_text",
+        "label":" Pair With Banner With Text"
+      }
+    ],
+    "blocks":[
+      {
+        "name":"Image Slide",
+        "type":"block_1",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"product_image",
+            "label":"Select Product Image"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+  "name":"Home Product Slider"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

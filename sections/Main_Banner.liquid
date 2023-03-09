@@ -1,0 +1,574 @@
+<style>
+    #overlay {
+        position: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        cursor: pointer;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+    #text {
+        position: absolute;
+        top: 110px;
+        left: 50%;
+        /* font-size: 50px; */
+        color: #000;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    #text p{
+        font-size: 20px;
+      font-family: 'gooper-re';
+    }
+
+    .main-banner-content {
+        background-color: #feefcb;
+        height: 112ch;
+        /* width: 941px; */
+        margin: 0 auto;
+    }
+
+    a {
+        color: #000;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    div#text {
+        text-align: center;
+        /* width: 65%; */
+    }
+
+    .MainImage {
+        width: 33%;
+        margin: 0 auto;
+        top: 241px;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .content {
+        width: 550px;
+        background: #ff903d;
+        border-radius: 100px;
+        bottom: -90px;
+        right: -12%;
+        position: absolute;
+        border: 3px solid #000;
+    }
+
+    .content p {
+        padding: 20px 25px;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 600;
+        font-family: 'gooper-reit';
+        margin: 0px;
+        text-align: center;
+    }
+
+    .MainImage img {
+        width: 100%;
+    }
+
+    img.uni {
+    position: absolute;
+    width: 10%;
+}
+img.absoooooImg {
+    bottom: -185px;
+    left: 400px;
+}
+
+img.absoooooImg1 {
+    bottom: -170px;
+    left: -60px;
+}
+
+img.absoooooImg3 {
+    bottom: -200px;
+    right: 31px;
+}
+img.absoooooImg4 {
+    bottom: -28px;
+    left: 100px;
+}
+
+img.absoooooImg5 {
+    right: 300px;
+    bottom: -230px;
+}
+img.absoooooImg6 {
+    right: 300px;
+    top: 200px;
+}
+img.absoooooImg7 {
+    right: 0px;
+    top: 300px;
+}
+    @media screen and (max-width:1600px){
+    .main-banner-content {
+    height: 230ch !important;
+    position: relative;
+}
+      #overlay{
+        background:none !important;
+        overflow-x:hidden;
+      }
+      .back-image{
+  display:block !important;
+}
+      img.back-image-overlay {
+    width: 111%;
+    left: -71px;
+    position: absolute;
+}
+    div#text{
+      text-align: center;
+    width: 80% !important;
+    }
+    .MainImage {
+    width: 66% !important;
+    top: 448px !important;
+}
+    .logo img {
+    width: 82% !important;
+}
+    .logo {
+    text-align: center;
+    margin-top: 50px;
+}
+    #text {
+    top: 232px ;
+}
+      #text p {
+    font-size: 27px;
+    font-family: 'gooper-re';
+}
+      img.absoooooImg4 {
+    bottom: 51%;
+    left: 44px;
+    width: 9%;
+}
+      img.absoooooImg7 {
+    right: 176px;
+    top: 399px;
+    width: 8%;
+}
+      img.absoooooImg3 {
+    bottom: 45%;
+    right: 29px;
+    width: 7%;
+}
+      img.absoooooImg1 {
+    bottom: 27%;
+    left: -53px;
+    width: 7%;
+}
+      img.absoooooImg5 {
+    right: 164px;
+    bottom: 27%;
+}
+      img.absoooooImg {
+    bottom: 20%;
+    left: 173px;
+    width: 12%;
+}
+      .content {
+    width: 115% !important;
+    bottom: -249px !important;
+    right: -75px !important;
+    border-radius: 211px;
+}
+      .content p {
+    padding: 34px 40px;
+    font-size: 64px;
+    line-height: 93px;
+    color: black;
+}
+      img.absoooooImg6 {
+    right: -68px;
+    top: 586px;
+    width: 8%;
+}
+      
+  }
+  @media screen and (max-width:1400px){
+    .main-banner-content {
+    height: 222ch !important;
+}
+    .content {
+    border-radius: 164px;
+}
+    div#text {
+    text-align: center;
+    width: 85% !important;
+}
+    #text p {
+    font-size: 24px;
+    font-family: 'gooper-re';
+}
+    .logo img {
+    width: 79% !important;
+}
+    .MainImage {
+    top: 430px !important;
+}
+    .qstn p {
+    font-size: 23px;
+}
+    img.absoooooImg7 {
+    right: 151px;
+}
+ img.absoooooImg {
+    bottom: 26%;
+    left: 148px;
+    width: 12%;
+}
+    img.absoooooImg1 {
+    bottom: 33%;
+    left: -53px;
+    width: 7%;
+}
+    img.absoooooImg4 {
+    bottom: 59%;
+    left: 40px;
+    width: 9%;
+}
+    img.absoooooImg5 {
+    right: 152px;
+    bottom: 36%;
+}
+    img.absoooooImg3 {
+    bottom: 52%;
+    right: 29px;
+    width: 7%;
+}
+    .content p {
+    padding: 21px 40px;
+    font-size: 56px;
+}
+  
+  }
+  @media screen and (max-width :990px){
+
+   div#overlay {
+    position: absolute;
+}
+#overlay {
+
+    background-size: contain;
+}
+#text p{
+        font-size: 12px;
+    }
+    #text {
+    top: 62px;
+    }
+    .content {
+    width: 280px;
+    bottom: -90px;
+    right: -25%;
+
+}
+.content p {
+    padding: 13px 18px;
+    font-size: 10px;
+   
+}
+.main-banner-content {
+    background-color: #feefcb;
+    height: 70ch;
+}
+.qstn {
+    width: 100%;
+}
+
+.qstn p {
+    font-size: 13px;
+}
+
+.ans {
+    width: 100%;
+}
+    .ans p {
+    font-size: 15px;
+}
+img.absoooooImg4 {
+    bottom: 160px;
+    left: 100px;
+}
+    img.absoooooImg {
+    bottom: 0;
+    left: 0;
+}
+
+.MainImage {
+    width: 48%;
+}  }
+
+@media screen and (min-width :1450px){
+    .main-banner-content {
+        height: 142ch;
+    }
+    .content {
+    width: 100%;
+    bottom: -71px;
+    right: 0;
+    }
+
+/* .logo img {
+    width: 75%;
+} */
+
+/* .MainImage {
+        width:35%;
+        top: 400px;
+     
+    }
+  #text {
+    top: 153px;
+  }
+ */
+
+
+}
+
+@media screen and (max-width:767px){
+  section.main-banner {
+    position: relative;
+}
+  div#overlay{
+  background:none !important;
+    overflow-x:hidden;
+  }
+  .logo {
+    text-align: center;
+    margin-top: 0px;
+}
+  .MainImage {
+    width: 71% !important;
+}
+  .MainImage {
+    margin: 0 auto;
+    top: 132px !important;
+    left: 0px;
+    right: 2px;
+    position: absolute;
+}
+      .back-image{
+        display:block !important;
+      }
+  img.back-image-overlay {
+    position: absolute;
+    width: 118.5%;
+    top: 0;
+    left: -35px;
+    bottom: 0;
+    right: 0;
+    border-top: 3px solid black;
+}
+ .main-banner-content {
+    background-color: #feefcb;
+    height: 70ch !important;
+}
+    #text p {
+    font-size: 11px;
+    width: 363px;
+    margin: 0;
+    line-height: 14px;
+}
+.logo img {
+    margin-top: 11px;
+    width: 63% !important;
+}
+  div#text {
+    text-align: center;
+    width: 100% !important;
+}
+  #text {
+   top: 71px !important;
+    padding-top:10px;
+}
+  #text p {
+    font-size: 10.4px !important;
+}
+  .content p {
+    padding: 11px 9px !important;
+    font-size: 20px !important;
+    color: black;
+    line-height: 23px;
+}
+  .content {
+    width: 353px !important;
+    bottom: -62px !important;
+    right: -14% !important;
+}
+img.absoooooImg7 {
+        right: 29px;
+    top: 113px;
+}
+  img.absoooooImg5 {
+    right: 32px;
+    bottom: 135px;
+}
+
+img.uni {
+    position: absolute;
+    width: 10%;
+}
+img.absoooooImg4 {
+    bottom: 259px !important;
+    left: -2px !important;
+}
+  img.absoooooImg6 {
+    display: none;
+}
+  img.absoooooImg3 {
+    bottom: 219px;
+    width: 10%;
+    right: -14.5px;
+}
+  img.absoooooImg {
+    bottom: 133px;
+    left: 30px;
+    width: 12% !important;
+}
+}
+.back-image{
+  display:none;
+}
+  #text a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-left: 3px;
+}
+
+</style>
+  
+  <section class="main-banner">
+        <div class="main-banner-content">
+            <div id="overlay" style= "background: url( {{section.settings.overlay | img_url:'master' }})">
+              {% if section.settings.overlay !=blank %}
+              <div class="back-image">
+        <img class="back-image-overlay" src="//cdn.shopify.com/s/files/1/0731/5318/4044/files/header-honey-drip-min-min_1.png?v=1678298950;">
+              </div>
+                {% endif %}
+                <div id="text">
+                    <p>{{ section.settings.accouncement_Text }}</p>
+                    <div class="logo">
+                        <img src="{{ section.settings.logo | img_url:'master' }}">
+                    </div>
+                </div>
+                <div class="MainImage">
+                    <img src="{{ section.settings.product_image | img_url:'master' }}">
+                    <div class="content">
+                        <p>{{ section.settings.img_content }}</p>
+                    </div>
+                </div>
+                <img src="{{ section.settings.img1 | img_url:'master' }}" class="absoooooImg uni">
+                <img src="{{ section.settings.img2 | img_url:'master' }}" class="absoooooImg1 uni">
+                <img src="{{ section.settings.img3 | img_url:'master' }}" class="absoooooImg3 uni">
+                <img src="{{ section.settings.img4 | img_url:'master' }}" class="absoooooImg4 uni">
+                <img src="{{ section.settings.img5 | img_url:'master' }}" class="absoooooImg5 uni">
+                <img src="{{ section.settings.img6 | img_url:'master' }}" class="absoooooImg6 uni">
+                <img src="{{ section.settings.img7 | img_url:'master' }}" class="absoooooImg7 uni">
+
+            </div>
+        </div>
+    </section>
+
+{% schema %}
+  {
+    "name": "Main_Banner",
+    "settings": [
+
+       {
+          "type": "richtext",
+          "id": "accouncement_Text",
+          "label": "Annoucement Text"
+        },
+  {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo"
+        },
+        {
+          "type": "image_picker",
+          "id": "overlay",
+          "label": "Overlay"
+        },
+      {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+      {
+          "type": "text",
+          "id": "img_content",
+          "label": "Content"
+        },
+      {
+          "type": "image_picker",
+          "id": "img1",
+          "label": "Img 1"
+        },
+       {
+          "type": "image_picker",
+          "id": "img2",
+          "label": "Img 2"
+        },
+       {
+          "type": "image_picker",
+          "id": "img3",
+          "label": "Img 3"
+        },
+       {
+          "type": "image_picker",
+          "id": "img4",
+          "label": "Img 4"
+        },
+       {
+          "type": "image_picker",
+          "id": "img5",
+          "label": "Img 5"
+        },
+       {
+          "type": "image_picker",
+          "id": "img6",
+          "label": "Img 6"
+        },
+       {
+          "type": "image_picker",
+          "id": "img7",
+          "label": "Img 7"
+        }
+       
+      
+    ],
+    "presets":[
+
+        { 
+          "name":"Main_Banner",
+          "category":"Main_Banner"
+     }
+
+             ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

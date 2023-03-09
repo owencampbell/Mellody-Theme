@@ -1,0 +1,342 @@
+<style>
+  
+    @font-face {
+    font-family: 'SpoofMedium';
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://cdn.shopify.com/s/files/1/0731/5318/4044/files/SpoofTrial-Medium_48a79da2-f39e-4522-9bef-3f439b2959c0.woff?v=1678314141");
+}
+@font-face {
+    font-family: 'gooper-reit';
+    font-style: normal;
+    font-weight: normal;
+    src:url("https://cdn.shopify.com/s/files/1/0731/5318/4044/files/Gooper-RegularItalic_173fc62a-6145-4356-9502-2df7c802fc1f.woff2?v=1678314141"); 
+}
+@font-face {
+    font-family: 'gooper-re';
+    font-style: normal;
+    font-weight: normal;
+    src:url("https://cdn.shopify.com/s/files/1/0731/5318/4044/files/Gooper-Regular_e5f4a5bd-da9c-40d8-9163-a3132146d428.woff2?v=1678314140"); 
+}
+     *,*::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+     .store-location {
+    position: relative;
+/*     background-color: #feefcb; */
+}
+.store-top-content {
+    position: relative;
+}
+.store-images-with-locations {
+    position: relative;
+}
+.bg-overlay {
+    position: absolute;
+    height: 1200px;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+img.bg-image {
+    position: absolute;
+    width: 113%;
+    left: -87px;
+    height: 94%;
+}
+
+img.header-logo {
+    width: 57%;
+    margin: auto;
+}
+
+.store-logo {
+    text-align: center;
+}
+
+.stores-location-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 0px;
+}
+.store-image-location {
+    width: 33.33%;
+    padding: 40px 16px;
+    text-align: center;
+}
+.store-image {
+    height: 444px;
+    position: relative;
+    overflow: hidden;
+}
+.store-image img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-position: center center;
+}
+
+img.location-icon {
+    width: 44px;
+}
+
+.location-icon-text {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.store-topbar-text {
+    text-align: center;
+}
+
+p.topbar-text {
+    color: black;
+    font-size: 30px;
+    padding: 60px 0px 45px;
+    font-family: 'gooper-re';
+    font-weight: 600;
+}
+
+.mellody-try-text-block {
+    / text-align: center; /
+    padding: 23px 0px 43px;
+}
+
+p.try-text {
+    text-align: center;
+    padding: 23px 60px;
+    font-size: 53px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #008000;
+    border: 4px solid black;
+    width: fit-content;
+    margin: auto;
+    border-radius: 31px;
+    background: white;
+    font-family: 'SpoofMedium';
+}
+a.location-title {
+    color: black;
+    font-size: 43px;
+    text-transform: uppercase;
+    padding: 10px 5px 10px 8px;
+    font-family: 'SpoofMedium';
+}
+@media screen and (max-width:1600px){
+    .mellody-try-text-block {
+    padding: 75px 0px 43px;
+}
+img.header-logo {
+    width: 62%;
+    margin: auto;
+}
+a.location-title {
+    font-size: 39px;
+}
+}
+ @media screen and (max-width:1400px){
+    p.topbar-text {
+    color: black;
+    font-size: 24px;
+    padding: 40px 0px 45px;
+}
+    img.header-logo {
+    width: 73%;
+    margin: auto;
+}
+.mellody-try-text-block {
+    padding: 49px 0px 22px;
+}
+p.try-text {
+    font-size: 38px;
+    padding: 23px 96px;
+}
+.store-image-location {
+    width: 50%;
+    padding: 40px 16px;
+    text-align: center;
+}
+    img.location-icon {
+    width: 31px;
+}
+a.location-title {
+    font-size: 34px;
+}
+ }
+  @media screen and (max-width:1100px){
+    .bg-overlay {
+    height: 1050px;
+}
+img.bg-image {
+    left: -75px;
+    height: 89%;
+}
+p.try-text {
+    font-size: 29px;
+    padding: 23px 96px;
+}
+p.topbar-text {
+    font-size: 19px;
+}
+  }
+  @media screen and (max-width:767px){
+    p.topbar-text {
+    font-size: 7.5px;
+    padding: 10px 0px;
+}
+img.header-logo {
+    width: 63%;
+    margin: auto;
+}
+.bg-overlay {
+    height: 492px;
+}
+img.bg-image {
+    width: 108%;
+    left: -12px;
+    height: 62%;
+}
+.mellody-try-text-block {
+    padding: 10px 0px 12px;
+}
+p.try-text {
+    font-size: 12px;
+    padding: 8px 13px;
+    border-radius: 13px;
+    border: 2px solid black;
+}
+.stores-location-flex {
+    padding: 6px 9px 30px;
+}
+.store-image-location {
+    width: 50%;
+    padding: 0px;
+    text-align: center;
+}
+.store-image {
+    height: 194px;
+}
+img.location-icon {
+    width: 19px;
+}
+a.location-title {
+    font-size: 13px;
+    padding-left: 4px;
+}
+  }
+  </style>
+    <section class="store-location">
+        <div class="store-location-container">
+            <div class="bg-overlay">
+            <div class="background-image">
+                <img src="{{ section.settings.image | img_url:'master' }}" alt="" class="bg-image">
+            </div>
+        </div>
+            <div class="store-top-content">
+            <div class="store-topbar-text">
+                <p class="topbar-text">{{ section.settings.title }}</p>
+            </div>
+            <div class="store-logo">
+                <img src="{{ section.settings.logo | img_url:'master' }}" alt="" class="header-logo">
+            </div>
+        </div>
+        <div class="store-images-with-locations">
+            <div class="mellody-try-text-block">
+                <p class="try-text">{{ section.settings.sub_title }}</p>
+            </div>
+            <div class="stores-location-flex">
+              {% for block in section.blocks %}
+                <div class="store-image-location">
+                    <div class="store-image">
+                        <img src="{{ block.settings.logo | img_url:'master' }}" alt="" class="metaburger-store">
+                    </div>
+                    <div class="location-icon-text">
+                        <img src="{{ 'retailer-store-icon.png' | asset_img_url:'master' }}" alt="" class="location-icon">
+                        <a href="{{ block.settings.loc_url }}" class="location-title">{{ block.settings.location }}</a>
+                    </div>
+                </div>
+              {% endfor %}
+            </div>
+        </div>
+        </div>
+    </section>
+{% schema %}
+  {
+    "name": "Locations",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"Select Image"
+      },
+      {
+        "type":"richtext",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"image_picker",
+        "id":"logo",
+        "label":"Select Logo"
+      },
+      {
+        "type":"textarea",
+        "id":"sub_title",
+        "label":"Sub Title"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"block_1",
+        "name":"Location",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"logo",
+            "label":"Location Logo"
+          },
+          {
+            "type":"url",
+            "id":"loc_url",
+            "label":"Locatoin Link"
+          },
+          {
+            "type":"text",
+            "id":"location",
+            "label":"Add Location"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Location"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

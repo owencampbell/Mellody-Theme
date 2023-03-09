@@ -1,0 +1,79 @@
+<!-- footer section start here -->
+        <footer class="mellody-footer">
+            <div class="footer-flex">
+                <div class="footer-logo">
+                    <img src="{{ section.settings.footer_logo | img_url:'master' }}" alt="" class="mellody-footer-logo">
+                </div>
+                <div class="footer-mellody-email-insta-blocks">
+                    <div class="footer-mellody-email-insta-inner-block">
+                    <div class="email-block">
+                        <p class="email-title">{{ section.settings.email_title }}</p>
+                         {% form 'customer' %} 
+                            <input type="email" name="contact[email]" class="signup-email" placeholder="type email here" required>
+                            <button type="submit" class="signup-button">submit</button>
+                       {%- if form.posted_successfully? -%}
+                <h3
+                  class="newsletter-form__message newsletter-form__message--success form__message"
+                  id="Newsletter-success--{{ section.id }}"
+                  tabindex="-1"
+                  autofocus
+                >
+                  {% render 'icon-success' -%}
+                  {{- 'newsletter.success' | t }}
+                </h3>
+              {%- endif -%}
+                        {% endform %}
+                     
+                    </div>
+                    <div class="insta-block">
+                     <a href="{{ section.settings.insta_url }}">   <img src="{{ section.settings.insta_icon | img_url:'master'}}" alt="" class="insta-image"></a>
+                        <a href="{{ section.settings.insta_url }}" class="insta-address">{{ section.settings.insta_id }}</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- footer section end here -->
+{% schema %}
+  {
+    "name": "Mellody Footer ",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"footer_logo",
+        "label":"Footer Logo"
+      },
+       {
+        "type":"text",
+        "id":"email_title",
+        "label":"Email Title"
+      },
+       {
+        "type":"image_picker",
+        "id":"insta_icon",
+        "label":"Upload Instagram Icon"
+      },
+      {
+        "type":"url",
+        "id":"insta_url",
+        "label":"Instagram Link"
+      },
+      {
+        "type":"text",
+        "id":"insta_id",
+        "label":"Instagram ID"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Mellody Footer"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

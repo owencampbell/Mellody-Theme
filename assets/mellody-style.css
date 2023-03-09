@@ -1,0 +1,600 @@
+
+    @font-face {
+    font-family: 'SpoofMedium';
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://cdn.shopify.com/s/files/1/0731/5318/4044/files/SpoofTrial-Medium_48a79da2-f39e-4522-9bef-3f439b2959c0.woff?v=1678314141");
+}
+@font-face {
+    font-family: 'gooper-reit';
+    font-style: normal;
+    font-weight: normal;
+    src:url("https://cdn.shopify.com/s/files/1/0731/5318/4044/files/Gooper-RegularItalic_173fc62a-6145-4356-9502-2df7c802fc1f.woff2?v=1678314141"); 
+}
+@font-face {
+    font-family: 'gooper-re';
+    font-style: normal;
+    font-weight: normal;
+    src:url("https://cdn.shopify.com/s/files/1/0731/5318/4044/files/Gooper-Regular_e5f4a5bd-da9c-40d8-9163-a3132146d428.woff2?v=1678314140"); 
+}
+     *,*::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+a{
+  color:black;
+}
+/* ********************
+ Mellody products slider section start here
+********************** */
+    section.mellody-products {
+    padding: 60px 0px 0px;
+    background-color: #feefcb;
+}
+    .mellody-question-heading {
+        width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0px 36px;
+}
+
+.mellody-product-conatiner {
+    /* width: 100%; */
+    /* max-width: 1400px; */
+    /* margin: 0 auto; */
+}
+
+p.mellody-question-text {
+    color: green;
+    font-family: 'SpoofMedium';
+    text-transform: uppercase;
+    padding: 23px 64px;
+    border: 4px solid black;
+    border-radius: 42px;
+    font-size: 53px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+.mellody-product-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 35px;
+}
+
+.mellody-before-content-image {
+    margin-right: 20px;
+}
+
+.mellody-after-content-image {
+    margin-left: 20px;
+}
+.mellody-before-content-image img {
+    width: 135px;
+}
+
+.mellody-product-content-text {
+    text-align: center;
+    align-self: end;
+}
+
+.mellody-after-content-image img {
+    width: 135px;
+}
+
+p.mellody-product-note {
+    text-transform: uppercase;
+    font-family: 'SpoofMedium';
+    color: lightcoral;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 60px;
+    padding: 0px 0px 20px;
+}
+
+h2.mellody-product-names {
+    letter-spacing: 1px;
+    font-size: 72px;
+    font-family: 'gooper-reit';
+}
+
+p.mellody-products-subtitle {
+    font-size: 58px;
+    font-weight: 500;
+    font-family: 'gooper-reit';
+}
+.mellody-prod-slider {
+    position: relative;
+    padding: 20px 0px 340px;
+}
+
+img.carousel-flower-left {
+    width: 200px;
+    position: absolute;
+    top: -73px;
+    left: 149px;
+    z-index: 9;
+}
+img.carousel-star-left {
+    width: 170px;
+    position: absolute;
+    bottom: 36px;
+    left: 70px;
+}
+
+img.pair-with-banner-with-text {
+    width: 46.5%;
+    position: absolute;
+    left: 514px;
+    bottom: 79px;
+    z-index: 9;
+}
+
+img.carousel-flower-right {
+    width: 170px;
+    position: absolute;
+    right: 96px;
+}
+/* ********************
+ Mellody products slider section end here
+********************** */
+
+/* ********************
+ carry interest section start here
+********************** */
+p.keep-loop-text {
+    font-family: 'SpoofMedium';
+    font-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+    letter-spacing: 1px;
+}
+h2.carry-question {
+    font-size: 47px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-family: 'gooper-reit';
+    margin: 21px 0px 40px;
+}
+section.carry-interest {
+    padding: 40px 0px;
+    text-align: center;
+    background-color: #feefcb;
+}
+
+button.interest-button {
+    background: darkorange;
+    padding: 14px 115px;
+    font-size: 42px;
+    border-radius: 28px;
+    border: 4px solid black;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-family: 'SpoofMedium';
+}
+
+/* ********************
+ carry interest section end here
+********************** */
+
+/* ********************
+ footer  section start here
+********************** */
+footer.mellody-footer {
+    background: darkgreen;
+    border-top:4px solid black;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 0px;
+}
+
+.footer-logo {
+    width: 50%;
+}
+
+.footer-mellody-email-insta-blocks {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+/* .footer-mellody-email-insta-inner-block {
+    width: 60%;
+    margin: auto;
+} */
+img.mellody-footer-logo {
+    width: 60%;
+}
+
+.footer-logo {
+    text-align: center;
+}
+.insta-block {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+img.insta-image {
+    width: 60px;
+}
+p.email-title {
+    font-size: 41.2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0px;
+    color: white;
+    font-family:sans-serif;
+}
+
+input.signup-email {
+    background: transparent;
+    border: none;
+    padding: 16px 10px;
+    width: 411px;
+    font-size: 31px;
+    /* height: 44px; */
+    color: white;
+    border-bottom: 4px solid black;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+input.signup-email::placeholder{
+    color: rgb(227, 227, 87);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+input.signup-email:focus-visible{
+    outline: 0;
+}
+
+a.insta-address {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 16px;
+    font-size: 26px;
+    font-family: sans-serif;
+}
+
+button.signup-button {
+    background: darkorange;
+    border: 4px solid black;
+    border-radius: 25px;
+    padding: 22px 35px;
+    font-size: 27px;
+    margin-left: 6px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* ********************
+ footer  section end here
+********************** */
+@media screen and (max-width:1600px){
+    p.mellody-question-text {
+        border-radius: 32px;
+        font-size: 39px;
+    }
+    p.mellody-product-note {
+        font-size: 51px;
+    }
+    .mellody-before-content-image img {
+        width: 100px;
+    }
+    h2.mellody-product-names {
+        font-size: 57px;
+    }
+    p.mellody-products-subtitle {
+        font-size: 46px;
+    }
+    .mellody-after-content-image img {
+        width: 100px;
+    }
+    img.pair-with-banner-with-text {
+        width: 41.5%;
+        left: 469px;
+        bottom: 127px;
+        z-index: 9;
+    }
+    img.carousel-star-left {
+        width: 170px;
+        bottom: 71px;
+        left: 103px;
+    }
+    img.carousel-flower-left {
+        width: 182px;
+        position: absolute;
+        top: -79px;
+        left: 156px;
+        z-index: 9;
+    }
+  section.carry-interest {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #feefcb;
+}
+section.mellody-products {
+    padding: 15px 0 0;
+    background-color: #feefcb;
+}
+}
+@media screen and (max-width:1400px){
+    img.pair-with-banner-with-text {
+        width: 37.5%;
+        left: 442px;
+        bottom: 167px;
+    }
+    img.carousel-flower-right {
+        width: 120px;
+        right: 134px;
+    }
+    img.carousel-flower-left {
+        width: 132px;
+        top: -48px;
+        left: 190px;
+    }
+    img.carousel-star-left {
+        width: 120px;
+        bottom: 138px;
+        left: 160px;
+    }
+    .mellody-product-content {
+        padding: 10px 0px ;
+    }
+    p.mellody-question-text {
+        border-radius: 30px;
+        font-size: 30px;
+    }
+    img.mellody-content-left-image {
+        width: 74px;
+        padding-bottom: 0;
+    }
+    img.mellody-content-right-image {
+        width: 74px;
+        padding-bottom: 0;
+    }
+    
+    p.mellody-product-note {
+        font-size: 40px;
+        padding: 0px 0px 20px;
+    }
+    
+    h2.mellody-product-names {
+        font-size: 43px;
+    }
+    p.mellody-products-subtitle {
+        font-size: 34px;
+    }
+    img.carousel-star-left {
+        width: 120px;
+        bottom: 48px;
+        left: 160px;
+    }
+    .mellody-prod-slider {
+        padding: 20px 0px 240px;
+    }
+    img.carousel-star-left {
+        bottom: 48px;
+    }
+    img.pair-with-banner-with-text {
+        bottom: 73px;
+    }
+    p.keep-loop-text {
+        font-size: 53px;
+    }
+    h2.carry-question {
+        font-size: 42px;
+    }
+    button.interest-button {
+        padding: 14px 114px;
+        font-size: 43px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    p.mellody-question-text {
+        border-radius: 23px;
+        font-size: 20px;
+    }
+    img.mellody-content-left-image {
+        width: 64px;
+    }
+    img.mellody-content-right-image {
+        width: 64px;
+    }
+    p.mellody-product-note {
+        font-size: 33px;
+        padding: 0px 0px 20px;
+    }
+    h2.mellody-product-names {
+        font-size: 35px;
+    }
+    p.mellody-products-subtitle {
+        font-size: 28px;
+    }
+    .mellody-prod-slider {
+        padding: 20px 0px 140px;
+    }
+    img.carousel-flower-left {
+        width: 114px;
+        top: -41px;
+        left: 93px;
+    }
+    p.email-title {
+        font-size: 34.2px;
+        padding: 20px 0px;
+    }
+    input.signup-email {
+        padding: 16px 10px;
+        width: 320px;
+        font-size: 25px;
+    }
+    img.insta-image {
+        width: 50px;
+    }
+    a.insta-address {
+        font-size: 23px;
+    }
+    button.signup-button {  
+        padding: 18px 28px;
+        font-size: 23px;
+    }
+    img.pair-with-banner-with-text {
+        width: 38.5%;
+        left: 318px;
+        bottom: 16px;
+    }
+    img.carousel-star-left {
+        width: 100px;
+        bottom: -8px;
+        left: 47px;
+    }
+    img.carousel-flower-right {
+        width: 100px;
+        right: 56px;
+    }
+    button.interest-button {
+        padding: 13px 95px;
+        font-size: 33px;
+    }
+    h2.carry-question {
+        font-size: 34px;
+    }
+    p.keep-loop-text {
+        font-size: 40px;
+    }
+    img.mellody-footer-logo {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:767px){
+    p.mellody-question-text {
+        border-radius: 8px;
+        font-size: 9px;
+        padding: 4px 8px;
+        border: 2px solid black;
+    }
+    p.mellody-product-note {
+        font-size: 11.5px;
+        padding: 0px 0px 10px;
+    }
+    h2.mellody-product-names {
+        font-size: 13px;
+    }
+    p.mellody-products-subtitle {
+        font-size: 10.5px;
+    }
+    .mellody-before-content-image {
+        margin-right: 5px;
+    }
+    img.mellody-content-left-image {
+        width: 26px;
+    }
+    .mellody-product-content-text {
+        padding-bottom: 3px;
+    }
+    .mellody-after-content-image {
+        margin-left: 5px;
+    }
+    img.mellody-content-right-image {
+        width: 26px;
+    }
+    .mellody-question-heading {
+        padding: 15px 0px 5px;
+    }
+    img.carousel-flower-left {
+        width: 41px;
+        top: -20px;
+        left: 44px;
+    }
+    img.pair-with-banner-with-text {
+        width: 44.5%;
+        left: 109px;
+        bottom: 7px;
+    }
+    .mellody-prod-slider {
+        padding: 1px 0px 60px;
+    }
+    section.mellody-products {
+        padding: 12px 0px 0px;
+    }
+  section.carry-interest {
+    padding: 15px 0px;
+    text-align: center;
+    background-color: #feefcb;
+}
+    img.carousel-flower-right {
+        width: 35px;
+        right: 31px;
+    }
+    img.carousel-star-left {
+        width: 39px;
+        bottom: -1px;
+        left: 30px;
+    }
+    h2.carry-question {
+        font-size: 18px;
+        padding: 0px 39px;
+        margin: 10px 0px;
+    }
+    button.interest-button {
+        padding: 6px 31px;
+        font-size: 15px;
+        border-radius: 13px;
+        border: 2px solid black;
+    }
+    p.keep-loop-text {
+        font-size: 12px;
+    }
+    button.interest-button {
+        padding: 4px 25px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+    .footer-logo {
+        width: 100%;
+    }
+    .footer-mellody-email-insta-blocks {
+        width: 100%;
+        text-align: center;
+    }
+    p.email-title {
+        font-size: 15px;
+        padding: 20px 0px;
+    }
+    button.signup-button {
+        padding: 10px 11px;
+        font-size: 15px;
+        border-radius: 13px;
+    }
+    input.signup-email {
+        padding: 13px 10px;
+        width: 195px;
+        font-size: 15px;
+    }
+    .insta-block {
+        justify-content: center;
+        padding-top: 28px;
+    }
+    img.insta-image {
+        width: 27px;
+    }
+    a.insta-address {
+        font-size: 15px;
+    }
+}

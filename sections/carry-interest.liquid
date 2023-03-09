@@ -1,0 +1,40 @@
+<section class="carry-interest">
+        <div class="carry-interest-container">
+            <p class="keep-loop-text">{{ section.settings.title }}</p>
+            <h2 class="carry-question">{{ section.settings.question }}</h2>
+            <button class="interest-button">{{ section.settings.button_text }}</button>
+        </div>
+        </section>
+{% schema %}
+  {
+    "name": "Carry Interest",
+    "settings": [
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+       {
+        "type":"text",
+        "id":"question",
+        "label":"Question Text"
+      },
+       {
+        "type":"text",
+        "id":"button_text",
+        "label":"Button text"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Carry Interest"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
