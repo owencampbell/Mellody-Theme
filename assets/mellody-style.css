@@ -173,7 +173,7 @@ section.carry-interest {
     background-color: #feefcb;
 }
 
-button.interest-button {
+a.interest-button {
     background: darkorange;
     padding: 14px 115px;
     font-size: 42px;
@@ -399,7 +399,7 @@ section.mellody-products {
     h2.carry-question {
         font-size: 42px;
     }
-    button.interest-button {
+    a.interest-button {
         padding: 14px 114px;
         font-size: 43px;
     }
@@ -467,7 +467,7 @@ section.mellody-products {
         width: 100px;
         right: 56px;
     }
-    button.interest-button {
+    a.interest-button {
         padding: 13px 95px;
         font-size: 33px;
     }
@@ -552,7 +552,7 @@ section.mellody-products {
         padding: 0px 39px;
         margin: 10px 0px;
     }
-    button.interest-button {
+    a.interest-button {
         padding: 6px 31px;
         font-size: 15px;
         border-radius: 13px;
@@ -561,10 +561,10 @@ section.mellody-products {
     p.keep-loop-text {
         font-size: 12px;
     }
-    button.interest-button {
-        padding: 4px 25px;
-        font-size: 15px;
-        border-radius: 8px;
+    a.interest-button {
+        padding: 4px 25px !important;
+        font-size: 15px !important;
+        border-radius: 8px !important;
     }
     .footer-logo {
         width: 100%;
