@@ -323,7 +323,7 @@ button.signup-button {
         z-index: 9;
     }
   section.carry-interest {
-    padding: 15px 0;
+    padding: 15px 0 25px;
     text-align: center;
     background-color: #feefcb;
 }
@@ -534,7 +534,7 @@ section.mellody-products {
         padding: 12px 0px 0px;
     }
   section.carry-interest {
-    padding: 15px 0px;
+    padding: 15px 0px 20px;
     text-align: center;
     background-color: #feefcb;
 }
